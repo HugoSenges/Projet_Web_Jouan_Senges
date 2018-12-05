@@ -1,0 +1,223 @@
+/* Style du fond de la page */
+html {
+  background-color: #B8ECD7;
+  background-image:url(images/fond.png);
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #083643;
+}
+/* Style des éléments principaux de la page d'accueil */
+#Titre_principal {
+  height: 40px;
+  background-color: white;
+  opacity: 0.8;
+  font-family: 'Cinzel', serif;
+  color: #083643;
+  style: black;
+  text-align: center;
+}
+
+/* Style du paragraphe de début de jeu */
+#Situation {
+  background-color: white;
+  opacity: 0.8;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #083643;
+  style: black;
+  font-size: 25;
+  text-align: justify;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin: 1px;
+}
+
+#HallofFame {
+  height: 40px;
+  background-color: white;
+  opacity: 0.8;
+  font-family: 'Cinzel', serif;
+  color: #083643;
+  style: black;
+  text-align: center;
+}
+
+/* Style du Hall Of Fame */
+.Vainqueurs {
+  background-color: white;
+  opacity: 0.8;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #083643;
+  style: black;
+  font-size: 25;
+}
+
+
+/* Style de la carte Leaflet */
+#mapid {
+  height: 650px;
+  width: auto;
+  border: 5px;
+  border-color: black;
+  margin-top: 10px;
+}
+
+
+/* Style de la barre des objets */
+#barre_obj {
+  height: 80px;
+  width: auto;
+  border: 10px;
+  border-color: black;
+  background-color: #476C5E;
+  margin-top: 10px;
+
+}
+
+/* Style du bouton de jeu */
+.btn {
+padding: 12px;
+font-family: arial;
+font-size: 1em;
+color: #FFFF;
+background-color: #023E73;
+border-radius: 25px;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border: 4px solid #061426;
+box-shadow: 3px 3px 12px #444444;
+-webkit-box-shadow: 3px 3px 12px #444444;
+-moz-box-shadow: 3px 3px 12px #444444;
+transition: .2s;
+}
+
+.btn {
+  display: block;
+  margin : auto;
+  margin-top: 30px;
+}
+
+.btn:hover {
+padding: 10px;
+color: #FFFFFF;
+background-color: #D9042B;
+border-radius: 24px;
+-webkit-border-radius: 24px;
+-moz-border-radius: 24px;
+border: 4px solid #FFFFFF;
+box-shadow: 1px 1px 4px #777777;
+-webkit-box-shadow: 1px 1px 4px #777777;
+-moz-box-shadow: 1px 1px 4px #777777;
+cursor: pointer;
+}
+
+
+fieldset {
+  background-color: white;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+legend {
+  background-color: white;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+
+
+
+
+/* Style du CSS Leaflet redéfinition */
+.leaflet-popup {
+	position: absolute;
+	text-align: center;
+	margin-bottom: 20px;
+	}
+.leaflet-popup-content-wrapper {
+	padding: 1px;
+	text-align: center;
+	border-radius: 12px;
+  font-size: 20px;
+	}
+.leaflet-popup-content {
+	margin: 13px 19px;
+	line-height: 1.4;
+	}
+.leaflet-popup-content p {
+	margin: 18px 0;
+	}
+.leaflet-popup-tip-container {
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	overflow: hidden;
+	pointer-events: none;
+	}
+.leaflet-popup-tip {
+	width: 17px;
+	height: 17px;
+	padding: 1px;
+
+	margin: -10px auto 0;
+
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+	background: #083643;
+	color: #FFFFFF;
+	box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+	}
+.leaflet-container a.leaflet-popup-close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 4px 4px 0 0;
+	border: none;
+	text-align: center;
+	width: 18px;
+	height: 14px;
+	font: 16px/14px Tahoma, Verdana, sans-serif;
+	color: #c3c3c3;
+	text-decoration: none;
+	font-weight: bold;
+	background: transparent;
+  font-size: 20px;
+  background-color: #083643;
+	}
+.leaflet-container a.leaflet-popup-close-button:hover {
+	color: #999;
+	}
+.leaflet-popup-scrolled {
+	overflow: auto;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	}
+
+.leaflet-oldie .leaflet-popup-content-wrapper {
+	zoom: 1;
+	}
+.leaflet-oldie .leaflet-popup-tip {
+	width: 24px;
+	margin: 0 auto;
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);
+	}
+.leaflet-oldie .leaflet-popup-tip-container {
+	margin-top: -1px;
+	}
+
+.leaflet-oldie .leaflet-control-zoom,
+.leaflet-oldie .leaflet-control-layers,
+.leaflet-oldie .leaflet-popup-content-wrapper,
+.leaflet-oldie .leaflet-popup-tip {
+	border: 1px solid #999;
+	}

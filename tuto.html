@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<!-- Entête du fichier HTML -->
+  <head>
+  <!-- Feuille de style CSS pour faire aparaître la carte -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+
+
+  <!-- On appelle l'API Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+crossorigin=""></script>
+  <!-- Feuille de style CSS relative à la page -->
+    <link rel="stylesheet" href="tuto.css">
+
+    <meta charset="utf-8">
+  <!-- Titre de l'onglet de la page -->
+    <title>Escape if you can</title>
+
+  <!-- Polices rajoutées pour le style -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+  </head>
+
+<!-- Corps du fichier HTML -->
+  <body>
+    <!-- Titre principal -->
+    <div id="Titre_principal">
+      <h1>Bienvenue dans le jeu</h1>
+    </div>
+    <!-- Création de la carte Leaflet -->
+     <div id="mapid"></div>
+
+     <!-- Barre des objets à récupérer -->
+     <div id="barre_obj"></div>
+
+     <!-- Bouton de début de partie -->
+     <button type="button" name="button" class="btn" id="btn">Débuter la partie</button>
+
+     <!-- Formulaire de fin de partie -->
+     <div class="formulaire">
+       <form name="inscription">
+         <fieldset id="form"><legend id="leg">Rentrez dans la légende</legend>
+           <p><label>Pseudo :<input type="text" name="pseudoV" id='pseudoV'></label></p>
+           <p><input type="button" name="valider" value="Valider"></p>
+         </fieldset>
+       </form>
+     </div>
+
+
+
+
+  <!-- Référence à une autre page JavaScript -->
+  <script type="text/javascript" src="essai.js"></script>
+  </body>
+</html>
